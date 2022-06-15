@@ -1,0 +1,59 @@
+### 用語
+- rootfs
+  - ルートディレクトリそのものに対する概念
+  - https://qiita.com/miyuki_samitani/items/dcaba183a8eec1f02a6b
+  - https://qiita.com/awakia/items/51d24b50585571b6d70b
+- PID1
+  - initプロセス
+  - システムを起動した際に最初に起動するプロセス
+  - 役割はゾンビプロセスの除去とサブプロセスへのシグナルの伝搬
+- Namespace(名前空間)
+- Linuxコンテナ
+  - https://linuxcontainers.org/ja/
+- デーモン
+  - Unix系のOSで常駐するソフトウェア、メモリ上でタスクを待つ
+  - https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)
+- RAWソケット
+  - 生のネットワークパケットのダイレクトな送受信を可能にするインターネットソケット
+  - https://ja.wikipedia.org/wiki/Raw_socket
+
+### コマンド
+- mktemp -d
+  - mktemp: 空のファイル作成コマンド
+  - d: ディレクトリ作成オプション
+  - https://xtech.nikkei.com/it/article/COLUMN/20060227/230833/
+- tar -C -x
+  - tar: 複数のファイルを一つにまとめたアーカイブ作成、展開コマンド
+  - x: アーカイブからファイルを抽出するオプション
+  - C: 新しいアーカイブを作成するオプション
+  - https://atmarkit.itmedia.co.jp/ait/articles/1608/15/news015.html
+- ln -s
+  - ln: ディレクトリやファイルへのリンクを登録するコマンド
+  - s: シンボリックリンクオプション
+  - https://eng-entrance.com/linux-command-ln
+- uuidgen
+  - UUID値を生成する
+  - UUIDとは他とは重ならない識別子
+  - https://kazmax.zpp.jp/cmd/u/uuidgen.1.html
+- uname -n
+  - uname: システム情報を表示
+  - n: ホスト名を表示するオプション
+  - https://eng-entrance.com/linux-command-uname
+- id
+  - ユーザーIDやユーザー名、グループID、グループ名などの情報を表示
+  - https://atmarkit.itmedia.co.jp/ait/articles/1808/02/news027.html
+- ps aux
+  - ps: OS内部で現在実行されているプロセス一覧を表示する
+  - a: 端末を持つすべてのプロセス
+  - x: 端末を持たないすべてのプロセス
+  - u: ユーザーの読みやすさを優先した表示
+  - https://atmarkit.itmedia.co.jp/ait/articles/1603/28/news022.html
+- mount
+  - 現在のマウント状況を表示
+  - https://eng-entrance.com/linux-command-mount
+- ip link
+  - ip: ネットワークデバイスやルーティング、ポリシーなどの変更と表示を行うコマンド
+  - link: ネットワークデバイス
+- top -p
+  - top: 現在実行中のプロセスをCPU使用率が高い順に表示
+  - p: プロセスIDを指定

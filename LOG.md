@@ -1,0 +1,6 @@
+- Download & Install VM
+  - https://www.virtualbox.org/
+- Install Vagrant
+  - brew install Vagrant
+- SSH
+  - vagrant ssh
